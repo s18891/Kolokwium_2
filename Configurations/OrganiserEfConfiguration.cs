@@ -8,14 +8,11 @@ using System.Threading.Tasks;
 
 namespace Kolokwium_2.Configurations
 {
-    public class TestEfConfiguration : IEntityTypeConfiguration<Test>
+    public class OrganiserEfConfiguration : IEntityTypeConfiguration<Organiser>
     {
-        public void Configure(EntityTypeBuilder<Test> builder)
+        public void Configure(EntityTypeBuilder<Organiser> builder)
         {
-            builder.HasKey(t => t.Id);
-            builder.Property(t => t.Name).HasMaxLength(100);
+            builder.HasKey(o => o.IdOrganiser);
         }
-
-
     }
 }

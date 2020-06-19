@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Kolokwium_2.DTOs.Requests;
+using Kolokwium_2.Models;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +10,9 @@ namespace Kolokwium_2.Services
 {
     public interface ITestDbService
     {
-        public IEnumerable getTests();
+        public Artist GetArtist(int id);
+
+        public void UpdateEventTime(int ArtistId, int EventId, UpdateRequest request);
+
     }
 }

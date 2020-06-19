@@ -20,9 +20,9 @@ namespace Kolokwium_2.Controllers
         }
 
         [HttpGet]
-        public IActionResult getTests(string name)
+        public IActionResult getTest(string name)
         {
-            return Ok(_service.getTests());   
+            return Ok(_service.getTest());   
         }
     }
 }
